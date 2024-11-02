@@ -1,6 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     const username = 'Lightgaming';
     const repoList = document.getElementById('repo-list');
+    const errorMessage = document.getElementById('error-message');
 
     const languageIcons = {
         'JavaScript': 'fab fa-js',
@@ -18,11 +19,16 @@ document.addEventListener('DOMContentLoaded', () => {
         'Swift': 'fab fa-swift',
         'Kotlin': 'fab fa-korvue',
         'Rust': 'fab fa-rust',
-        'Dart': 'fab fa-dart'
+        'Dart': 'fab fa-dart-lang'
     };
 
     fetch(`https://api.github.com/users/${username}/repos?sort=created&per_page=6`)
-        .then(response => response.json())
+        .then(response => {
+            if (response.status === 403) {
+                throw new Error('API rate limit exceeded. Please try again later.');
+            }
+            return response.json();
+        })
         .then(data => {
             data.forEach(repo => {
                 const listItem = document.createElement('li');
@@ -49,5 +55,8 @@ document.addEventListener('DOMContentLoaded', () => {
                     .catch(error => console.error('Error fetching languages:', error));
             });
         })
-        .catch(error => console.error('Error fetching repos:', error));
+        .catch(error => {
+            console.error('Error fetching repos:', error);
+            errorMessage.textContent = error.message;
+        });
 });
