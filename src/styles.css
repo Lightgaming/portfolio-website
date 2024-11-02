@@ -1,0 +1,90 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+main {
+    padding: 2rem;
+}
+
+h1, h2 {
+    margin: 0 0 1rem;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+li {
+    background-color: #fff;
+    margin: 0.5rem 0;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: transform 0.2s;
+}
+
+li:hover {
+    transform: scale(1.05);
+}
+
+li a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+li h3 {
+    margin: 0 0 0.5rem;
+    font-size: 1.2rem;
+}
+
+li p {
+    margin: 0 0 0.5rem;
+    color: #555;
+}
+
+.badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.badge {
+    display: flex;
+    align-items: center;
+    background-color: #eee;
+    border-radius: 3px;
+    padding: 0.2rem 0.5rem;
+    font-size: 0.8rem;
+}
+
+.badge i {
+    margin-right: 0.3rem;
+}
+
+@media (min-width: 600px) {
+    ul {
+        grid-template-columns: repeat(4, 1fr);
+        overflow-x: auto;
+    }
+}
+
+@media (min-width: 900px) {
+    ul {
+        grid-template-columns: repeat(6, 1fr);
+    }
+}
