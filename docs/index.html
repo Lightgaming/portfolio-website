@@ -1,23 +1,418 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Florian Lotz | IT Security Specialist</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 </head>
+
 <body>
-    <header>
-        <h1>My Portfolio</h1>
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo"></div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#repos">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <header id="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Florian Lotz</h1>
+                <p class="tagline">IT Security Specialist & Full-Stack Developer</p>
+                <div class="social-links">
+                    <a href="https://github.com/Lightgaming" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://linkedin.com/in/florian-lotz-56b6b02a0" target="_blank"><i
+                            class="fab fa-linkedin"></i></a>
+                </div>
+                <a href="#contact" class="cta-btn">Get in Touch</a>
+            </div>
+        </div>
     </header>
+
     <main>
-        <section id="repos">
-            <h2>Top Repositories</h2>
-            <ul id="repo-list"></ul>
-            <div id="error-message" class="error-message"></div>
+        <section id="about" class="section">
+            <div class="container">
+                <h2 class="section-title">About Me</h2>
+                <div class="about-content">
+                    <div class="about-image">
+                        <div class="placeholder-image"></div>
+                    </div>
+                    <div class="about-text">
+                        <p>Hello! I'm Florian, an IT Security specialist and Full-Stack developer based in Vienna,
+                            Austria. I'm currently completing my Bachelor's degree in IT Security at FH St. Pölten, with
+                            an expected graduation in June 2025.</p>
+                        <p>With experience in penetration testing, secure application development, and a strong
+                            foundation in various programming languages, I'm passionate about creating robust and secure
+                            software solutions. My background includes work in healthcare (as a certified paramedic),
+                            which has instilled in me a strong sense of responsibility and attention to detail -
+                            critical qualities in the cybersecurity field.</p>
+                        <p>When I'm not securing applications or writing code, you can find me exploring music
+                            production, cooking, or practicing speedcubing.</p>
+                        <a href="Lebenslauf_Florian_Lotz.pdf" class="btn">Download Resume <i
+                                class="fas fa-download"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="section section-alt">
+            <div class="container">
+                <h2 class="section-title">Skills & Technologies</h2>
+                <div class="skills-container">
+                    <div class="skill-category">
+                        <h3><i class="fas fa-code"></i> Programming Languages</h3>
+                        <div class="skill-items">
+                            <span class="skill-item">JavaScript</span>
+                            <span class="skill-item">Dart</span>
+                            <span class="skill-item">C#</span>
+                            <span class="skill-item">HTML/CSS</span>
+                            <span class="skill-item">Java</span>
+                            <span class="skill-item">SQL</span>
+                            <span class="skill-item">Python</span>
+                            <span class="skill-item">Linux Bash</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3><i class="fas fa-layer-group"></i> Frameworks & Tools</h3>
+                        <div class="skill-items">
+                            <span class="skill-item">React</span>
+                            <span class="skill-item">Node.js</span>
+                            <span class="skill-item">Vue.js</span>
+                            <span class="skill-item">Flutter</span>
+                            <span class="skill-item">Spring Boot</span>
+                            <span class="skill-item">Django</span>
+                            <span class="skill-item">Docker</span>
+                            <span class="skill-item">Playwright</span>
+                            <span class="skill-item">Cypress</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3><i class="fas fa-shield-alt"></i> Security & Networking</h3>
+                        <div class="skill-items">
+                            <span class="skill-item">Penetration Testing</span>
+                            <span class="skill-item">Cryptography</span>
+                            <span class="skill-item">Cisco Networking</span>
+                            <span class="skill-item">Network Protocols</span>
+                            <span class="skill-item">ISMS</span>
+                            <span class="skill-item">ISO 27001</span>
+                            <span class="skill-item">Risk Management</span>
+                            <span class="skill-item">ITIL</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3><i class="fas fa-database"></i> Databases & Other</h3>
+                        <div class="skill-items">
+                            <span class="skill-item">MongoDB</span>
+                            <span class="skill-item">PostgreSQL</span>
+                            <span class="skill-item">MySQL</span>
+                            <span class="skill-item">Business Administration</span>
+                            <span class="skill-item">Marketing</span>
+                            <span class="skill-item">Accounting</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="language" class="section">
+            <div class="container">
+                <h2 class="section-title">Languages</h2>
+                <div class="language-container">
+                    <div class="language-item">
+                        <h3>German</h3>
+                        <div class="language-level">
+                            <div class="level-bar level-native"></div>
+                            <span>Native</span>
+                        </div>
+                    </div>
+                    <div class="language-item">
+                        <h3>English</h3>
+                        <div class="language-level">
+                            <div class="level-bar level-fluent"></div>
+                            <span>Very Good</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="education" class="section section-alt">
+            <div class="container">
+                <h2 class="section-title">Education</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3>Bachelor of IT Security</h3>
+                            <h4>FH St. Pölten</h4>
+                            <span class="timeline-date">September 2022 - Present (Expected Graduation: June 2025)</span>
+                            <p>Specialized in cybersecurity, secure application development, and network security.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3>Certified Paramedic</h3>
+                            <h4>Arbeiter Samariter Bund</h4>
+                            <span class="timeline-date">September - November 2021</span>
+                            <p>Obtained certification as a paramedic, developing critical thinking and emergency
+                                response skills.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3>Technical High School Diploma (Matura)</h3>
+                            <h4>HTBLuVA Spengergasse</h4>
+                            <span class="timeline-date">2016 - 2021</span>
+                            <p>Bilingual English program with specialization in Information Technology.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience" class="section">
+            <div class="container">
+                <h2 class="section-title">Work Experience</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3>Security Intern</h3>
+                            <h4>Syslifters GmbH</h4>
+                            <span class="timeline-date">September - December 2024</span>
+                            <ul class="experience-list">
+                                <li>Conducted penetration tests on web applications</li>
+                                <li>Developed and maintained secure applications using Django and Python</li>
+                                <li>Implemented automated security tests with Playwright</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3>Frontend Developer (Part-time)</h3>
+                            <h4>Marqably Digital</h4>
+                            <span class="timeline-date">January 2022 - August 2024</span>
+                            <ul class="experience-list">
+                                <li>Developed mobile applications using Flutter</li>
+                                <li>Built responsive web interfaces with React</li>
+                                <li>Implemented secure authentication flows and API integrations</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3>Paramedic - Civil Service</h3>
+                            <h4>Arbeiter Samariter Bund</h4>
+                            <span class="timeline-date">September 2021 - May 2022</span>
+                            <ul class="experience-list">
+                                <li>Provided emergency medical services and patient transport</li>
+                                <li>Developed critical decision-making skills under pressure</li>
+                                <li>Maintained detailed and accurate documentation</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3>Flutter Developer</h3>
+                            <h4>DU Agentur GmbH (later Marqably Digital)</h4>
+                            <span class="timeline-date">June - August 2022</span>
+                            <p>Developed mobile applications using Flutter framework with a focus on secure data
+                                handling.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3>Frontend Developer - Intern</h3>
+                            <h4>DU Agentur GmbH</h4>
+                            <span class="timeline-date">August 2020</span>
+                            <ul class="experience-list">
+                                <li>Developed user interfaces with React</li>
+                                <li>Implemented automated testing using Cypress</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3>DevOps Intern</h3>
+                            <h4>Austriacard GmbH</h4>
+                            <span class="timeline-date">July 2020</span>
+                            <ul class="experience-list">
+                                <li>Created a DevOps pipeline using Jenkins, Docker, and React</li>
+                                <li>Developed React frontend components</li>
+                                <li>Implemented secure CI/CD workflows</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3>Full Stack Developer</h3>
+                            <h4>Timelesssoft GmbH</h4>
+                            <span class="timeline-date">January 2019 - January 2020</span>
+                            <ul class="experience-list">
+                                <li>Developed React frontend applications</li>
+                                <li>Built backend services with Node.js and Express.js</li>
+                                <li>Implemented MongoDB database solutions</li>
+                                <li>Created Google Chrome extensions</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="security-focus" class="section section-alt">
+            <div class="container">
+                <h2 class="section-title">Security Expertise</h2>
+                <div class="security-grid">
+                    <div class="security-card">
+                        <i class="fas fa-bug"></i>
+                        <h3>Penetration Testing</h3>
+                        <p>Application security assessment, vulnerability scanning, and reporting. Experience with
+                            industry-standard testing methodologies.</p>
+                    </div>
+                    <div class="security-card">
+                        <i class="fas fa-lock"></i>
+                        <h3>Cryptography</h3>
+                        <p>Understanding of RSA, AES, and Elliptic Curve cryptography. Implementation of secure
+                            encryption protocols in applications.</p>
+                    </div>
+                    <div class="security-card">
+                        <i class="fas fa-network-wired"></i>
+                        <h3>Network Security</h3>
+                        <p>Knowledge of network protocols and security implementations including IP, TCP, UDP, HTTP(S),
+                            TLS, DNS(SEC), and more.</p>
+                    </div>
+                    <div class="security-card">
+                        <i class="fas fa-clipboard-check"></i>
+                        <h3>Compliance & Standards</h3>
+                        <p>Familiarity with ISMS, ISO 27001, ITIL, and risk management frameworks (Crisam certified).
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="repos" class="section">
+            <div class="container">
+                <h2 class="section-title">Top Projects</h2>
+                <ul id="repo-list"></ul>
+                <div id="error-message" class="error-message"></div>
+                <div class="text-center">
+                    <a href="https://github.com/Lightgaming" target="_blank" class="btn">View All Projects <i
+                            class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <section id="interests" class="section section-alt">
+            <div class="container">
+                <h2 class="section-title">Interests</h2>
+                <div class="interests-container">
+                    <div class="interest-item">
+                        <i class="fas fa-shield-alt"></i>
+                        <h3>IT Security</h3>
+                    </div>
+                    <div class="interest-item">
+                        <i class="fas fa-music"></i>
+                        <h3>Music Production</h3>
+                        <p>Sound Synthesis</p>
+                    </div>
+                    <div class="interest-item">
+                        <i class="fas fa-utensils"></i>
+                        <h3>Cooking</h3>
+                    </div>
+                    <div class="interest-item">
+                        <i class="fas fa-cube"></i>
+                        <h3>Speedcubing</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <div class="container">
+                <h2 class="section-title">Get In Touch</h2>
+                <div class="contact-content" style="display: flex; justify-content: center; align-items: center;">
+                    <div class="contact-info" style="text-align: center; width: 80%; max-width: 600px;">
+                        <div class="contact-item"
+                            style="display: flex; align-items: center; margin-bottom: 1rem; gap: 1rem;">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h3>Email</h3>
+                                <p><a href="mailto:florian@lotz.zip">florian@lotz.zip</a></p>
+                            </div>
+                        </div>
+                        <div class="contact-item"
+                            style="display: flex; align-items: center; margin-bottom: 1rem; gap: 1rem;">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h3>Phone</h3>
+                                <p><a href="tel:+43680331230">+43 680 331 2303</a></p>
+                            </div>
+                        </div>
+                        <div class="contact-item"
+                            style="display: flex; align-items: center; margin-bottom: 1rem; gap: 1rem;">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h3>Location</h3>
+                                <p>Wiesengasse 2-12 <br> 1090 Wien, Austria</p>
+                            </div>
+                        </div>
+
+                        <a href="mailto:florian@lotz.zip?subject=Website Contact&body=Hi Florian,%0D%0A%0D%0A"
+                            class="btn">Send Email</a>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
+
+    <footer>
+        <div class="container">
+            <p>© 2025 Florian Lotz. All rights reserved.</p>
+        </div>
+    </footer>
+
     <script src="script.js"></script>
+    <script>
+        // Mobile navigation toggle
+        document.addEventListener('DOMContentLoaded', () => {
+            const hamburger = document.querySelector('.hamburger');
+            const navLinks = document.querySelector('.nav-links');
+
+            hamburger.addEventListener('click', () => {
+                navLinks.classList.toggle('active');
+            });
+
+            // Close mobile menu when clicking on links
+            document.querySelectorAll('.nav-links a').forEach(link => {
+                link.addEventListener('click', () => {
+                    navLinks.classList.remove('active');
+                });
+            });
+        });
+    </script>
 </body>
+
 </html>
